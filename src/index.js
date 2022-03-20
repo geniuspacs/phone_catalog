@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Dashboard from './components/dashboard';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
+import { AppHeader } from './components/appHeader';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Container fluid className="p-0">
+    <AppHeader />
+    <Dashboard />
+  </Container>,
   document.getElementById('root')
 );
 
