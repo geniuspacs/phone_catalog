@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Dashboard from './components/dashboard';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
-import { AppHeader } from './components/appHeader';
+import { AppHeader } from './components/AppHeader';
+import { AppRouter } from './components/AppRouter';
 
 ReactDOM.render(
   <Container fluid className="p-0">
     <AppHeader />
-    <Dashboard />
+    <AppRouter />
   </Container>,
   document.getElementById('root')
 );
